@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Generated Dataset Task",
+  "type": "object",
+  "required": [
+    "dataset_task_id",
+    "source_template",
+    "family",
+    "difficulty",
+    "composition_size",
+    "shape_bucket",
+    "dtype",
+    "operation_sequence",
+    "metadata",
+    "filters"
+  ],
+  "properties": {
+    "dataset_task_id": { "type": "string" },
+    "source_template": { "type": "string" },
+    "family": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["L1", "L2", "L3"] },
+    "composition_size": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "shape_bucket": { "type": "string" },
+    "dtype": { "type": "string" },
+    "operation_sequence": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "metadata": { "type": "object" },
+    "filters": {
+      "type": "object",
+      "required": [
+        "runtime_ms",
+        "runtime_pass",
+        "ast_signature",
+        "ast_similarity_to_holdout",
+        "ast_similarity_pass",
+        "composition_pass"
+      ],
+      "properties": {
+        "runtime_ms": { "type": "number" },
+        "runtime_pass": { "type": "boolean" },
+        "ast_signature": { "type": "string" },
+        "ast_similarity_to_holdout": { "type": "number" },
+        "ast_similarity_pass": { "type": "boolean" },
+        "composition_pass": { "type": "boolean" }
+      }
+    }
+  }
+}

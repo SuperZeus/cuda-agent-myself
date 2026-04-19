@@ -1,0 +1,25 @@
+{
+  "episode_count": 110,
+  "successful_episode_count": 110,
+  "successful_task_count": 10,
+  "reward_histogram": {
+    "-1": 0,
+    "0": 0,
+    "1": 110,
+    "2": 0,
+    "3": 0
+  },
+  "policy_histogram": {
+    "reference_compile_verify": 10,
+    "reference_verify_only": 10,
+    "reference_compile_verify_alt": 10,
+    "reference_verify_only_alt": 10,
+    "reference_compile_then_verify_probe": 10,
+    "preferred_compile_verify": 10,
+    "preferred_verify_only": 10,
+    "preferred_compile_verify_alt": 10,
+    "preferred_verify_only_alt": 10,
+    "preferred_compile_then_verify_probe": 10,
+    "preferred_full_loop": 10
+  }
+}

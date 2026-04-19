@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dataset Split Manifest",
+  "type": "object",
+  "required": ["version", "splits"],
+  "properties": {
+    "version": { "type": "string" },
+    "splits": {
+      "type": "object",
+      "required": ["train", "dev", "test", "hidden_test"],
+      "properties": {
+        "train": { "type": "array", "items": { "type": "string" } },
+        "dev": { "type": "array", "items": { "type": "string" } },
+        "test": { "type": "array", "items": { "type": "string" } },
+        "hidden_test": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

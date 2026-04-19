@@ -23,6 +23,9 @@ python3 -m runner.run_task --task-id axpby_scalar --variant handcrafted --action
 python3 tools/validate_tasks.py
 python3 tools/phase0_smoke.py --actions compile verify
 python3 tools/phase1_report.py
+python3 tools/build_phase3_dataset.py
+python3 tools/sample_dataset_trajectories.py --limit 10 --rounds 1
+python3 tools/validate_phase3_dataset.py
 ```
 
 Local environment note:

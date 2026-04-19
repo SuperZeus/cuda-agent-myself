@@ -1,0 +1,3662 @@
+[
+  {
+    "episode_id": "axpby_scalar:reference_compile_verify:round1",
+    "task_id": "axpby_scalar",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.034,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073812Z-73ffb5da",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.937,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073814Z-6f211ab5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:reference_verify_only:round1",
+    "task_id": "axpby_scalar",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.937,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073814Z-6f211ab5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:reference_compile_verify_alt:round1",
+    "task_id": "axpby_scalar",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.034,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073812Z-73ffb5da",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.937,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073814Z-6f211ab5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:reference_verify_only_alt:round1",
+    "task_id": "axpby_scalar",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.937,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073814Z-6f211ab5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:reference_compile_then_verify_probe:round1",
+    "task_id": "axpby_scalar",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.034,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073812Z-73ffb5da",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.937,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073814Z-6f211ab5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:preferred_compile_verify:round1",
+    "task_id": "axpby_scalar",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.039,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073831Z-bc7997da",
+        "stdout_tail": "[INFO] compiling sources: kernels/axpby.cu, kernels/axpby_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.94,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073833Z-32299828",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:preferred_verify_only:round1",
+    "task_id": "axpby_scalar",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.94,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073833Z-32299828",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:preferred_compile_verify_alt:round1",
+    "task_id": "axpby_scalar",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.039,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073831Z-bc7997da",
+        "stdout_tail": "[INFO] compiling sources: kernels/axpby.cu, kernels/axpby_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.94,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073833Z-32299828",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:preferred_verify_only_alt:round1",
+    "task_id": "axpby_scalar",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.94,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073833Z-32299828",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:preferred_compile_then_verify_probe:round1",
+    "task_id": "axpby_scalar",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.039,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073831Z-bc7997da",
+        "stdout_tail": "[INFO] compiling sources: kernels/axpby.cu, kernels/axpby_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.94,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073833Z-32299828",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "axpby_scalar:preferred_full_loop:round1",
+    "task_id": "axpby_scalar",
+    "variant": "handcrafted",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.039,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073831Z-bc7997da",
+        "stdout_tail": "[INFO] compiling sources: kernels/axpby.cu, kernels/axpby_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.94,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073833Z-32299828",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.344,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/axpby_scalar/20260419T073835Z-e60a4b7c",
+        "stdout_tail": "Eager: {'median_us': 4.938, 'mean_us': 5.015, 'stdev_us': 0.242, 'min_us': 4.75, 'max_us': 5.583}\nTorchCompile: {'median_us': 15.604, 'mean_us': 15.996, 'stdev_us': 1.118, 'min_us': 15.125, 'max_us': 20.25}\nCandidate: {'median_us': 5.0, 'mean_us': 5.011, 'stdev_us': 0.113, 'min_us': 4.834, 'max_us': 5.375}\nSpeedupVsEager: 0.9876\nSpeedupVsTorchCompile: 3.1208",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 4.938,
+            "mean_us": 5.015,
+            "stdev_us": 0.242,
+            "min_us": 4.75,
+            "max_us": 5.583
+          },
+          "torchcompile": {
+            "median_us": 15.604,
+            "mean_us": 15.996,
+            "stdev_us": 1.118,
+            "min_us": 15.125,
+            "max_us": 20.25
+          },
+          "candidate": {
+            "median_us": 5.0,
+            "mean_us": 5.011,
+            "stdev_us": 0.113,
+            "min_us": 4.834,
+            "max_us": 5.375
+          },
+          "SpeedupVsEager": 0.9876,
+          "SpeedupVsTorchCompile": 3.1208
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:reference_compile_verify:round1",
+    "task_id": "broadcast_add",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073847Z-31f4c777",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.958,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073849Z-103bd565",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:reference_verify_only:round1",
+    "task_id": "broadcast_add",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.958,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073849Z-103bd565",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:reference_compile_verify_alt:round1",
+    "task_id": "broadcast_add",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073847Z-31f4c777",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.958,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073849Z-103bd565",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:reference_verify_only_alt:round1",
+    "task_id": "broadcast_add",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.958,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073849Z-103bd565",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:reference_compile_then_verify_probe:round1",
+    "task_id": "broadcast_add",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073847Z-31f4c777",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.958,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073849Z-103bd565",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:preferred_compile_verify:round1",
+    "task_id": "broadcast_add",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.014,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073906Z-be8ae3b7",
+        "stdout_tail": "[INFO] compiling sources: kernels/broadcast_add.cu, kernels/broadcast_add_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.955,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073908Z-854570fc",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:preferred_verify_only:round1",
+    "task_id": "broadcast_add",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.955,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073908Z-854570fc",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:preferred_compile_verify_alt:round1",
+    "task_id": "broadcast_add",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.014,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073906Z-be8ae3b7",
+        "stdout_tail": "[INFO] compiling sources: kernels/broadcast_add.cu, kernels/broadcast_add_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.955,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073908Z-854570fc",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:preferred_verify_only_alt:round1",
+    "task_id": "broadcast_add",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.955,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073908Z-854570fc",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:preferred_compile_then_verify_probe:round1",
+    "task_id": "broadcast_add",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.014,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073906Z-be8ae3b7",
+        "stdout_tail": "[INFO] compiling sources: kernels/broadcast_add.cu, kernels/broadcast_add_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.955,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073908Z-854570fc",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "broadcast_add:preferred_full_loop:round1",
+    "task_id": "broadcast_add",
+    "variant": "handcrafted",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.014,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073906Z-be8ae3b7",
+        "stdout_tail": "[INFO] compiling sources: kernels/broadcast_add.cu, kernels/broadcast_add_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.955,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073908Z-854570fc",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.628,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/broadcast_add/20260419T073910Z-49f1c5c8",
+        "stdout_tail": "Eager: {'median_us': 2.667, 'mean_us': 2.729, 'stdev_us': 0.191, 'min_us': 2.542, 'max_us': 3.333}\nTorchCompile: {'median_us': 15.167, 'mean_us': 15.623, 'stdev_us': 1.184, 'min_us': 14.791, 'max_us': 19.875}\nCandidate: {'median_us': 2.625, 'mean_us': 2.644, 'stdev_us': 0.104, 'min_us': 2.542, 'max_us': 3.041}\nSpeedupVsEager: 1.016\nSpeedupVsTorchCompile: 5.7779",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 2.667,
+            "mean_us": 2.729,
+            "stdev_us": 0.191,
+            "min_us": 2.542,
+            "max_us": 3.333
+          },
+          "torchcompile": {
+            "median_us": 15.167,
+            "mean_us": 15.623,
+            "stdev_us": 1.184,
+            "min_us": 14.791,
+            "max_us": 19.875
+          },
+          "candidate": {
+            "median_us": 2.625,
+            "mean_us": 2.644,
+            "stdev_us": 0.104,
+            "min_us": 2.542,
+            "max_us": 3.041
+          },
+          "SpeedupVsEager": 1.016,
+          "SpeedupVsTorchCompile": 5.7779
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:reference_compile_verify:round1",
+    "task_id": "relu_bias",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.035,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073923Z-46419ee9",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.968,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073924Z-51a79f0f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:reference_verify_only:round1",
+    "task_id": "relu_bias",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.968,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073924Z-51a79f0f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:reference_compile_verify_alt:round1",
+    "task_id": "relu_bias",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.035,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073923Z-46419ee9",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.968,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073924Z-51a79f0f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:reference_verify_only_alt:round1",
+    "task_id": "relu_bias",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.968,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073924Z-51a79f0f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:reference_compile_then_verify_probe:round1",
+    "task_id": "relu_bias",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.035,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073923Z-46419ee9",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.968,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073924Z-51a79f0f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:preferred_compile_verify:round1",
+    "task_id": "relu_bias",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.061,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073941Z-1da66f6a",
+        "stdout_tail": "[INFO] compiling sources: kernels/relu_bias.cu, kernels/relu_bias_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.953,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073943Z-b1f9fdb2",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:preferred_verify_only:round1",
+    "task_id": "relu_bias",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.953,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073943Z-b1f9fdb2",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:preferred_compile_verify_alt:round1",
+    "task_id": "relu_bias",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.061,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073941Z-1da66f6a",
+        "stdout_tail": "[INFO] compiling sources: kernels/relu_bias.cu, kernels/relu_bias_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.953,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073943Z-b1f9fdb2",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:preferred_verify_only_alt:round1",
+    "task_id": "relu_bias",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.953,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073943Z-b1f9fdb2",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:preferred_compile_then_verify_probe:round1",
+    "task_id": "relu_bias",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.061,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073941Z-1da66f6a",
+        "stdout_tail": "[INFO] compiling sources: kernels/relu_bias.cu, kernels/relu_bias_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.953,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073943Z-b1f9fdb2",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "relu_bias:preferred_full_loop:round1",
+    "task_id": "relu_bias",
+    "variant": "handcrafted",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.061,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073941Z-1da66f6a",
+        "stdout_tail": "[INFO] compiling sources: kernels/relu_bias.cu, kernels/relu_bias_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.953,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073943Z-b1f9fdb2",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.6,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/relu_bias/20260419T073945Z-0f99b9f4",
+        "stdout_tail": "Eager: {'median_us': 3.083, 'mean_us': 3.175, 'stdev_us': 0.209, 'min_us': 2.959, 'max_us': 3.75}\nTorchCompile: {'median_us': 13.042, 'mean_us': 13.231, 'stdev_us': 0.554, 'min_us': 12.75, 'max_us': 15.083}\nCandidate: {'median_us': 3.041, 'mean_us': 3.04, 'stdev_us': 0.054, 'min_us': 2.958, 'max_us': 3.167}\nSpeedupVsEager: 1.0138\nSpeedupVsTorchCompile: 4.2887",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 3.083,
+            "mean_us": 3.175,
+            "stdev_us": 0.209,
+            "min_us": 2.959,
+            "max_us": 3.75
+          },
+          "torchcompile": {
+            "median_us": 13.042,
+            "mean_us": 13.231,
+            "stdev_us": 0.554,
+            "min_us": 12.75,
+            "max_us": 15.083
+          },
+          "candidate": {
+            "median_us": 3.041,
+            "mean_us": 3.04,
+            "stdev_us": 0.054,
+            "min_us": 2.958,
+            "max_us": 3.167
+          },
+          "SpeedupVsEager": 1.0138,
+          "SpeedupVsTorchCompile": 4.2887
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:reference_compile_verify:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073958Z-2dfe964b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.972,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073959Z-7461aca8",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:reference_verify_only:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.972,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073959Z-7461aca8",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:reference_compile_verify_alt:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073958Z-2dfe964b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.972,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073959Z-7461aca8",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:reference_verify_only_alt:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.972,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073959Z-7461aca8",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:reference_compile_then_verify_probe:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073958Z-2dfe964b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.972,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T073959Z-7461aca8",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:preferred_compile_verify:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.048,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074016Z-7314ea17",
+        "stdout_tail": "[INFO] compiling sources: kernels/sigmoid_mul.cu, kernels/sigmoid_mul_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.97,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074018Z-cc02bced",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:preferred_verify_only:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.97,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074018Z-cc02bced",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:preferred_compile_verify_alt:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.048,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074016Z-7314ea17",
+        "stdout_tail": "[INFO] compiling sources: kernels/sigmoid_mul.cu, kernels/sigmoid_mul_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.97,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074018Z-cc02bced",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:preferred_verify_only_alt:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.97,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074018Z-cc02bced",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:preferred_compile_then_verify_probe:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.048,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074016Z-7314ea17",
+        "stdout_tail": "[INFO] compiling sources: kernels/sigmoid_mul.cu, kernels/sigmoid_mul_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.97,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074018Z-cc02bced",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sigmoid_mul:preferred_full_loop:round1",
+    "task_id": "sigmoid_mul",
+    "variant": "handcrafted",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.048,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074016Z-7314ea17",
+        "stdout_tail": "[INFO] compiling sources: kernels/sigmoid_mul.cu, kernels/sigmoid_mul_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.97,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074018Z-cc02bced",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.312,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sigmoid_mul/20260419T074020Z-940746d1",
+        "stdout_tail": "Eager: {'median_us': 3.646, 'mean_us': 3.758, 'stdev_us': 0.272, 'min_us': 3.583, 'max_us': 4.75}\nTorchCompile: {'median_us': 14.584, 'mean_us': 14.75, 'stdev_us': 0.742, 'min_us': 14.083, 'max_us': 17.375}\nCandidate: {'median_us': 3.584, 'mean_us': 3.598, 'stdev_us': 0.05, 'min_us': 3.5, 'max_us': 3.709}\nSpeedupVsEager: 1.0173\nSpeedupVsTorchCompile: 4.0692",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 3.646,
+            "mean_us": 3.758,
+            "stdev_us": 0.272,
+            "min_us": 3.583,
+            "max_us": 4.75
+          },
+          "torchcompile": {
+            "median_us": 14.584,
+            "mean_us": 14.75,
+            "stdev_us": 0.742,
+            "min_us": 14.083,
+            "max_us": 17.375
+          },
+          "candidate": {
+            "median_us": 3.584,
+            "mean_us": 3.598,
+            "stdev_us": 0.05,
+            "min_us": 3.5,
+            "max_us": 3.709
+          },
+          "SpeedupVsEager": 1.0173,
+          "SpeedupVsTorchCompile": 4.0692
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:reference_compile_verify:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.035,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074033Z-485566fd",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.989,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074034Z-efe04271",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:reference_verify_only:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.989,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074034Z-efe04271",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:reference_compile_verify_alt:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.035,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074033Z-485566fd",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.989,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074034Z-efe04271",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:reference_verify_only_alt:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.989,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074034Z-efe04271",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:reference_compile_then_verify_probe:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.035,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074033Z-485566fd",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.989,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074034Z-efe04271",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:preferred_compile_verify:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.02,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074051Z-c487039c",
+        "stdout_tail": "[INFO] compiling sources: kernels/sum_lastdim.cu, kernels/sum_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.941,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074049Z-28adbeba",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:preferred_verify_only:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.941,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074049Z-28adbeba",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:preferred_compile_verify_alt:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.02,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074051Z-c487039c",
+        "stdout_tail": "[INFO] compiling sources: kernels/sum_lastdim.cu, kernels/sum_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.941,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074049Z-28adbeba",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:preferred_verify_only_alt:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.941,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074049Z-28adbeba",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:preferred_compile_then_verify_probe:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.02,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074051Z-c487039c",
+        "stdout_tail": "[INFO] compiling sources: kernels/sum_lastdim.cu, kernels/sum_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.941,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074049Z-28adbeba",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "sum_reduction_lastdim:preferred_full_loop:round1",
+    "task_id": "sum_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.02,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074051Z-c487039c",
+        "stdout_tail": "[INFO] compiling sources: kernels/sum_lastdim.cu, kernels/sum_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.941,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T074049Z-28adbeba",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 2.912,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/sum_reduction_lastdim/20260419T073248Z-31fa6f3d",
+        "stdout_tail": "Eager: {'median_us': 5.5, 'mean_us': 5.577, 'stdev_us': 0.207, 'min_us': 5.292, 'max_us': 6.167}\nTorchCompile: {'median_us': 16.645, 'mean_us': 17.765, 'stdev_us': 3.35, 'min_us': 16.083, 'max_us': 31.875}\nCandidate: {'median_us': 5.5, 'mean_us': 5.5, 'stdev_us': 0.06, 'min_us': 5.375, 'max_us': 5.584}\nSpeedupVsEager: 1.0\nSpeedupVsTorchCompile: 3.0264",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 5.5,
+            "mean_us": 5.577,
+            "stdev_us": 0.207,
+            "min_us": 5.292,
+            "max_us": 6.167
+          },
+          "torchcompile": {
+            "median_us": 16.645,
+            "mean_us": 17.765,
+            "stdev_us": 3.35,
+            "min_us": 16.083,
+            "max_us": 31.875
+          },
+          "candidate": {
+            "median_us": 5.5,
+            "mean_us": 5.5,
+            "stdev_us": 0.06,
+            "min_us": 5.375,
+            "max_us": 5.584
+          },
+          "SpeedupVsEager": 1.0,
+          "SpeedupVsTorchCompile": 3.0264
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:reference_compile_verify:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074054Z-85ab829b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": false
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.053,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074055Z-e79e1aa5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": false
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:reference_verify_only:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.053,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074055Z-e79e1aa5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:reference_compile_verify_alt:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074054Z-85ab829b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.053,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074055Z-e79e1aa5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:reference_verify_only_alt:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.053,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074055Z-e79e1aa5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:reference_compile_then_verify_probe:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074054Z-85ab829b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.053,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T074055Z-e79e1aa5",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:preferred_compile_verify:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.028,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073252Z-c45bc22a",
+        "stdout_tail": "[INFO] compiling sources: kernels/mean_lastdim.cu, kernels/mean_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.024,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073254Z-18a93d61",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:preferred_verify_only:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.024,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073254Z-18a93d61",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:preferred_compile_verify_alt:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.028,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073252Z-c45bc22a",
+        "stdout_tail": "[INFO] compiling sources: kernels/mean_lastdim.cu, kernels/mean_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.024,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073254Z-18a93d61",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:preferred_verify_only_alt:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.024,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073254Z-18a93d61",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:preferred_compile_then_verify_probe:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.028,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073252Z-c45bc22a",
+        "stdout_tail": "[INFO] compiling sources: kernels/mean_lastdim.cu, kernels/mean_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.024,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073254Z-18a93d61",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "mean_reduction_lastdim:preferred_full_loop:round1",
+    "task_id": "mean_reduction_lastdim",
+    "variant": "handcrafted",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.028,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073252Z-c45bc22a",
+        "stdout_tail": "[INFO] compiling sources: kernels/mean_lastdim.cu, kernels/mean_lastdim_binding.cpp\n[SKIP] CUDA toolchain unavailable: CUDA_HOME=None, nvcc=None\n[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "skipped",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.024,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073254Z-18a93d61",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.087,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/mean_reduction_lastdim/20260419T073257Z-90cd76ec",
+        "stdout_tail": "Eager: {'median_us': 8.792, 'mean_us': 8.883, 'stdev_us': 0.342, 'min_us': 8.375, 'max_us': 9.75}\nTorchCompile: {'median_us': 17.667, 'mean_us': 17.969, 'stdev_us': 1.269, 'min_us': 16.958, 'max_us': 22.5}\nCandidate: {'median_us': 8.479, 'mean_us': 8.492, 'stdev_us': 0.079, 'min_us': 8.333, 'max_us': 8.625}\nSpeedupVsEager: 1.0369\nSpeedupVsTorchCompile: 2.0836",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 8.792,
+            "mean_us": 8.883,
+            "stdev_us": 0.342,
+            "min_us": 8.375,
+            "max_us": 9.75
+          },
+          "torchcompile": {
+            "median_us": 17.667,
+            "mean_us": 17.969,
+            "stdev_us": 1.269,
+            "min_us": 16.958,
+            "max_us": 22.5
+          },
+          "candidate": {
+            "median_us": 8.479,
+            "mean_us": 8.492,
+            "stdev_us": 0.079,
+            "min_us": 8.333,
+            "max_us": 8.625
+          },
+          "SpeedupVsEager": 1.0369,
+          "SpeedupVsTorchCompile": 2.0836
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:reference_compile_verify:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:reference_verify_only:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:reference_compile_verify_alt:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:reference_verify_only_alt:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:reference_compile_then_verify_probe:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:preferred_compile_verify:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:preferred_verify_only:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:preferred_compile_verify_alt:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:preferred_verify_only_alt:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:preferred_compile_then_verify_probe:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "clamp_shift:preferred_full_loop:round1",
+    "task_id": "clamp_shift",
+    "variant": "reference",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073301Z-9f332c5d",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.998,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073302Z-11cab94c",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 2.999,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/clamp_shift/20260419T073304Z-c8a0e787",
+        "stdout_tail": "Eager: {'median_us': 5.0, 'mean_us': 5.152, 'stdev_us': 0.289, 'min_us': 4.958, 'max_us': 5.916}\nTorchCompile: {'median_us': 14.958, 'mean_us': 15.315, 'stdev_us': 1.127, 'min_us': 14.0, 'max_us': 18.542}\nCandidate: {'median_us': 5.042, 'mean_us': 5.052, 'stdev_us': 0.076, 'min_us': 4.875, 'max_us': 5.208}\nSpeedupVsEager: 0.9917\nSpeedupVsTorchCompile: 2.9667",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 5.0,
+            "mean_us": 5.152,
+            "stdev_us": 0.289,
+            "min_us": 4.958,
+            "max_us": 5.916
+          },
+          "torchcompile": {
+            "median_us": 14.958,
+            "mean_us": 15.315,
+            "stdev_us": 1.127,
+            "min_us": 14.0,
+            "max_us": 18.542
+          },
+          "candidate": {
+            "median_us": 5.042,
+            "mean_us": 5.052,
+            "stdev_us": 0.076,
+            "min_us": 4.875,
+            "max_us": 5.208
+          },
+          "SpeedupVsEager": 0.9917,
+          "SpeedupVsTorchCompile": 2.9667
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:reference_compile_verify:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:reference_verify_only:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:reference_compile_verify_alt:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:reference_verify_only_alt:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:reference_compile_then_verify_probe:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:preferred_compile_verify:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:preferred_verify_only:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:preferred_compile_verify_alt:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:preferred_verify_only_alt:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:preferred_compile_then_verify_probe:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "normalize_l2:preferred_full_loop:round1",
+    "task_id": "normalize_l2",
+    "variant": "reference",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.037,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073308Z-44c3014e",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.976,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073309Z-0de1755f",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 2.91,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/normalize_l2/20260419T073311Z-fed7324b",
+        "stdout_tail": "Eager: {'median_us': 6.854, 'mean_us': 6.973, 'stdev_us': 0.283, 'min_us': 6.708, 'max_us': 7.625}\nTorchCompile: {'median_us': 14.687, 'mean_us': 15.044, 'stdev_us': 0.961, 'min_us': 14.208, 'max_us': 18.292}\nCandidate: {'median_us': 6.666, 'mean_us': 6.675, 'stdev_us': 0.07, 'min_us': 6.542, 'max_us': 6.833}\nSpeedupVsEager: 1.0282\nSpeedupVsTorchCompile: 2.2033",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 6.854,
+            "mean_us": 6.973,
+            "stdev_us": 0.283,
+            "min_us": 6.708,
+            "max_us": 7.625
+          },
+          "torchcompile": {
+            "median_us": 14.687,
+            "mean_us": 15.044,
+            "stdev_us": 0.961,
+            "min_us": 14.208,
+            "max_us": 18.292
+          },
+          "candidate": {
+            "median_us": 6.666,
+            "mean_us": 6.675,
+            "stdev_us": 0.07,
+            "min_us": 6.542,
+            "max_us": 6.833
+          },
+          "SpeedupVsEager": 1.0282,
+          "SpeedupVsTorchCompile": 2.2033
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:reference_compile_verify:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:reference_verify_only:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:reference_compile_verify_alt:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:reference_verify_only_alt:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:reference_compile_then_verify_probe:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:preferred_compile_verify:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:preferred_verify_only:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:preferred_compile_verify_alt:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:preferred_verify_only_alt:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:preferred_compile_then_verify_probe:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "softmax_rows:preferred_full_loop:round1",
+    "task_id": "softmax_rows",
+    "variant": "reference",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.04,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073315Z-7fb0c303",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.052,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073317Z-639b8903",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.155,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/softmax_rows/20260419T073319Z-b101e55e",
+        "stdout_tail": "Eager: {'median_us': 3.25, 'mean_us': 3.308, 'stdev_us': 0.146, 'min_us': 3.167, 'max_us': 3.709}\nTorchCompile: {'median_us': 17.354, 'mean_us': 17.546, 'stdev_us': 0.842, 'min_us': 16.5, 'max_us': 20.375}\nCandidate: {'median_us': 3.167, 'mean_us': 3.204, 'stdev_us': 0.054, 'min_us': 3.125, 'max_us': 3.333}\nSpeedupVsEager: 1.0262\nSpeedupVsTorchCompile: 5.4796",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 3.25,
+            "mean_us": 3.308,
+            "stdev_us": 0.146,
+            "min_us": 3.167,
+            "max_us": 3.709
+          },
+          "torchcompile": {
+            "median_us": 17.354,
+            "mean_us": 17.546,
+            "stdev_us": 0.842,
+            "min_us": 16.5,
+            "max_us": 20.375
+          },
+          "candidate": {
+            "median_us": 3.167,
+            "mean_us": 3.204,
+            "stdev_us": 0.054,
+            "min_us": 3.125,
+            "max_us": 3.333
+          },
+          "SpeedupVsEager": 1.0262,
+          "SpeedupVsTorchCompile": 5.4796
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:reference_compile_verify:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:reference_verify_only:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "reference_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:reference_compile_verify_alt:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "reference_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:reference_verify_only_alt:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "reference_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:reference_compile_then_verify_probe:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "reference_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:preferred_compile_verify:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify",
+    "observation_style": "concise",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:preferred_verify_only:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only",
+    "observation_style": "minimal",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:preferred_compile_verify_alt:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "preferred_compile_verify_alt",
+    "observation_style": "verbose",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:preferred_verify_only_alt:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "preferred_verify_only_alt",
+    "observation_style": "tail-focused",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:preferred_compile_then_verify_probe:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "preferred_compile_then_verify_probe",
+    "observation_style": "diagnostic",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  },
+  {
+    "episode_id": "tanh_residual:preferred_full_loop:round1",
+    "task_id": "tanh_residual",
+    "variant": "reference",
+    "policy_name": "preferred_full_loop",
+    "observation_style": "benchmark",
+    "rollout_round": 1,
+    "steps": [
+      {
+        "action": "compile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 0.036,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073323Z-5d7b213b",
+        "stdout_tail": "[PASS] structural preflight success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "verify",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 1.016,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073325Z-37e67dd3",
+        "stdout_tail": "[PASS] verify check 1/3\n[PASS] verify check 2/3\n[PASS] verify check 3/3\n[PASS] verify success",
+        "stderr_tail": "",
+        "status": "passed",
+        "cache_hit": true
+      },
+      {
+        "action": "profile",
+        "exit_code": 0,
+        "timed_out": false,
+        "duration_sec": 3.305,
+        "run_root": "/Users/liumingliang/CUDA/cuda-agent-myself/logs/runs/tanh_residual/20260419T073327Z-60fd0dbf",
+        "stdout_tail": "Eager: {'median_us': 8.187, 'mean_us': 8.327, 'stdev_us': 0.313, 'min_us': 8.084, 'max_us': 9.208}\nTorchCompile: {'median_us': 19.104, 'mean_us': 21.408, 'stdev_us': 8.658, 'min_us': 18.458, 'max_us': 58.958}\nCandidate: {'median_us': 7.937, 'mean_us': 8.015, 'stdev_us': 0.234, 'min_us': 7.75, 'max_us': 8.583}\nSpeedupVsEager: 1.0315\nSpeedupVsTorchCompile: 2.407",
+        "stderr_tail": "",
+        "status": "passed",
+        "profile_metrics": {
+          "eager": {
+            "median_us": 8.187,
+            "mean_us": 8.327,
+            "stdev_us": 0.313,
+            "min_us": 8.084,
+            "max_us": 9.208
+          },
+          "torchcompile": {
+            "median_us": 19.104,
+            "mean_us": 21.408,
+            "stdev_us": 8.658,
+            "min_us": 18.458,
+            "max_us": 58.958
+          },
+          "candidate": {
+            "median_us": 7.937,
+            "mean_us": 8.015,
+            "stdev_us": 0.234,
+            "min_us": 7.75,
+            "max_us": 8.583
+          },
+          "SpeedupVsEager": 1.0315,
+          "SpeedupVsTorchCompile": 2.407
+        },
+        "cache_hit": true
+      }
+    ],
+    "final_reward": 1,
+    "success": true
+  }
+]

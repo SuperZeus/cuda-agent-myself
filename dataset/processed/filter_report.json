@@ -1,0 +1,21 @@
+{
+  "generated_count": 13646,
+  "filtered_count": 9284,
+  "families": [
+    "broadcast",
+    "elementwise",
+    "normalization",
+    "reduction"
+  ],
+  "difficulty_counts": {
+    "L1": 4292,
+    "L2": 1174,
+    "L3": 3818
+  },
+  "template_counts": {
+    "eltwise_pair": 4292,
+    "broadcast_gate": 540,
+    "row_reduction": 634,
+    "norm_chain": 3818
+  }
+}

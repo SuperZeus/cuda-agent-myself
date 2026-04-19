@@ -1,0 +1,66 @@
+{
+  "version": "phase3-v1",
+  "split_sizes": {
+    "train": 300,
+    "dev": 30,
+    "test": 30,
+    "hidden_test": 20
+  },
+  "family_distribution": {
+    "train": {
+      "broadcast": 75,
+      "elementwise": 75,
+      "normalization": 75,
+      "reduction": 75
+    },
+    "dev": {
+      "broadcast": 8,
+      "elementwise": 8,
+      "normalization": 7,
+      "reduction": 7
+    },
+    "test": {
+      "broadcast": 8,
+      "elementwise": 8,
+      "normalization": 7,
+      "reduction": 7
+    },
+    "hidden_test": {
+      "broadcast": 5,
+      "elementwise": 5,
+      "normalization": 5,
+      "reduction": 5
+    }
+  },
+  "difficulty_distribution": {
+    "train": {
+      "L1": 75,
+      "L2": 150,
+      "L3": 75
+    },
+    "dev": {
+      "L1": 8,
+      "L2": 15,
+      "L3": 7
+    },
+    "test": {
+      "L1": 8,
+      "L2": 15,
+      "L3": 7
+    },
+    "hidden_test": {
+      "L1": 5,
+      "L2": 10,
+      "L3": 5
+    }
+  },
+  "rules": {
+    "max_composition_size": 5,
+    "runtime_window_ms": [
+      1,
+      100
+    ],
+    "ast_similarity_threshold": 0.9,
+    "fixed_eval_sets": true
+  }
+}

@@ -18,8 +18,6 @@ build/
 logs/runs/
 artifacts/
 dataset/raw/
-dataset/processed/
-dataset/trajectories/
 
 # Local configs
 configs/env.local.json
