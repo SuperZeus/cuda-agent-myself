@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Phase-0 compile entrypoint.
-
-If CUDA/C++ sources exist, try to compile them.
-If no sources exist yet, perform a structural preflight and succeed.
-"""
+"""Compile C++/CUDA extension sources when the environment allows it."""
 
 from __future__ import annotations
 
@@ -35,9 +31,17 @@ def preflight() -> int:
 
 def compile_sources(sources: list[str]) -> int:
     try:
+        import torch
         import torch.utils.cpp_extension as cpp_ext
     except Exception as exc:
         print(f"[SKIP] torch cpp extension unavailable: {exc}")
+        return preflight()
+
+    has_cuda_source = any(source.endswith(".cu") for source in sources)
+    nvcc = shutil.which("nvcc")
+    cuda_home = cpp_ext.CUDA_HOME
+    if has_cuda_source and (not cuda_home or not nvcc):
+        print(f"[SKIP] CUDA toolchain unavailable: CUDA_HOME={cuda_home}, nvcc={nvcc}")
         return preflight()
 
     build_dir = Path("build/phase0_compile")
@@ -54,9 +58,9 @@ def compile_sources(sources: list[str]) -> int:
             sources=sources,
             build_directory=str(build_dir),
             verbose=False,
-            with_cuda=True,
+            with_cuda=has_cuda_source,
             extra_cflags=["-O2", "-std=c++17"],
-            extra_cuda_cflags=["-O2"],
+            extra_cuda_cflags=["-O2", "--use_fast_math"] if has_cuda_source else None,
         )
     except Exception as exc:
         print(f"[FAIL] compile failed: {exc}")

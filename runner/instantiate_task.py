@@ -27,7 +27,20 @@ def set_readonly(path: Path) -> None:
     path.chmod(mode & ~(stat.S_IWUSR | stat.S_IWGRP | stat.S_IWOTH))
 
 
-def instantiate(task_id: str) -> Path:
+def copy_optional_tree(src: Path, dst: Path) -> None:
+    if not src.exists():
+        return
+    for entry in src.rglob("*"):
+        rel = entry.relative_to(src)
+        target = dst / rel
+        if entry.is_dir():
+            target.mkdir(parents=True, exist_ok=True)
+        else:
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(entry, target)
+
+
+def instantiate(task_id: str, variant: str = "reference") -> Path:
     task = load_task(task_id)
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "-" + uuid.uuid4().hex[:8]
     run_root = REPO_ROOT / "logs" / "runs" / task_id / run_id
@@ -39,6 +52,9 @@ def instantiate(task_id: str) -> Path:
     for name in ["model.py", "inputs.py", "task.json", "reference.md", "metadata.json", "expected_behavior.md"]:
         shutil.copy2(task_dir / name, workdir / name)
 
+    if variant != "reference":
+        copy_optional_tree(task_dir / variant, workdir)
+
     workspace_meta = {
         "task_id": task_id,
         "run_id": run_id,
@@ -47,6 +63,7 @@ def instantiate(task_id: str) -> Path:
         "environment": {"profile": "local-dev"},
         "readonly_files": PROTECTED_FILES,
         "editable_files": task["editable_files"],
+        "variant": variant,
         "best_reward": None,
         "best_artifact_path": None,
     }
@@ -59,10 +76,11 @@ def instantiate(task_id: str) -> Path:
 
 
 def main() -> int:
-    if len(sys.argv) != 2:
-        print("usage: python -m runner.instantiate_task <task-id>")
+    if len(sys.argv) not in {2, 3}:
+        print("usage: python -m runner.instantiate_task <task-id> [variant]")
         return 1
-    workdir = instantiate(sys.argv[1])
+    variant = sys.argv[2] if len(sys.argv) == 3 else "reference"
+    workdir = instantiate(sys.argv[1], variant)
     print(workdir)
     return 0
 

@@ -14,3 +14,12 @@ Included tasks:
 - `broadcast_add`
 - `normalize_l2`
 - `softmax_rows`
+
+Handcrafted CUDA-oriented variants currently exist for:
+
+- `axpby_scalar`
+- `broadcast_add`
+- `relu_bias`
+- `sigmoid_mul`
+- `sum_reduction_lastdim`
+- `mean_reduction_lastdim`

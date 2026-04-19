@@ -19,8 +19,10 @@ cd /Users/liumingliang/CUDA/cuda-agent-myself
 python3 -m runner.run_task --task-id axpby_scalar --action compile
 python3 -m runner.run_task --task-id axpby_scalar --action verify
 python3 -m runner.run_task --task-id axpby_scalar --action profile
+python3 -m runner.run_task --task-id axpby_scalar --variant handcrafted --action verify
 python3 tools/validate_tasks.py
 python3 tools/phase0_smoke.py --actions compile verify
+python3 tools/phase1_report.py
 ```
 
 Local environment note:

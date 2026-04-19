@@ -44,6 +44,8 @@ def benchmark(model, inputs, device: str, iters: int = 20, warmup: int = 5) -> d
         "median_us": round(statistics.median(samples), 3),
         "mean_us": round(statistics.mean(samples), 3),
         "stdev_us": round(statistics.pstdev(samples), 3),
+        "min_us": round(min(samples), 3),
+        "max_us": round(max(samples), 3),
     }
 
 
@@ -82,6 +84,12 @@ def main() -> int:
         print(f"TorchCompile: unavailable ({exc})")
 
     print(f"Candidate: {candidate_stats}")
+    if "median_us" in candidate_stats and "median_us" in eager_stats:
+        eager_speedup = round(eager_stats["median_us"] / candidate_stats["median_us"], 4)
+        print(f"SpeedupVsEager: {eager_speedup}")
+    if "median_us" in candidate_stats and "median_us" in compile_stats:
+        compile_speedup = round(compile_stats["median_us"] / candidate_stats["median_us"], 4)
+        print(f"SpeedupVsTorchCompile: {compile_speedup}")
     return 0
 
 

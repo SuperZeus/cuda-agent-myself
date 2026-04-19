@@ -24,13 +24,14 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--task-id", required=True)
     parser.add_argument("--action", choices=sorted(ACTION_TO_SCRIPT), required=True)
+    parser.add_argument("--variant", default="reference")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     task = load_task(args.task_id)
-    workdir = instantiate(args.task_id)
+    workdir = instantiate(args.task_id, args.variant)
     run_root = workdir.parent
     run_id = run_root.name
 
