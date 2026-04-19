@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Agent Episode Trajectory",
+  "type": "object",
+  "required": [
+    "task_id",
+    "policy_name",
+    "termination_reason",
+    "success",
+    "final_reward",
+    "run_root",
+    "step_count",
+    "steps"
+  ],
+  "properties": {
+    "task_id": { "type": "string" },
+    "policy_name": { "type": "string" },
+    "termination_reason": { "type": "string" },
+    "success": { "type": "boolean" },
+    "final_reward": { "type": "integer" },
+    "run_root": { "type": "string" },
+    "step_count": { "type": "integer" },
+    "steps": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  }
+}

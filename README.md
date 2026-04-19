@@ -11,6 +11,8 @@ Current scope:
 - Observation compression and read-only evaluation policies
 - Ten standardized starter tasks
 - One-command `compile` / `verify` / `profile` task execution
+- Phase-2 inference-time agent MVP with persistent episode trajectories
+- Phase-3 dataset generation, split freezing, and episode-level rollout sampling
 
 Quick start:
 
@@ -23,8 +25,12 @@ python3 -m runner.run_task --task-id axpby_scalar --variant handcrafted --action
 python3 tools/validate_tasks.py
 python3 tools/phase0_smoke.py --actions compile verify
 python3 tools/phase1_report.py
+python3 tools/run_agent_mvp.py --task-id axpby_scalar --policy handcrafted_bootstrap
+python3 tools/run_agent_mvp.py --task-id softmax_rows --policy agent_edit_loop_v1
+python3 tools/replay_viewer.py /path/to/agent_trajectory.json
+python3 tools/phase2_report.py
 python3 tools/build_phase3_dataset.py
-python3 tools/sample_dataset_trajectories.py --limit 10 --rounds 1
+python3 tools/sample_dataset_trajectories.py --limit 10 --rounds 4
 python3 tools/validate_phase3_dataset.py
 ```
 
