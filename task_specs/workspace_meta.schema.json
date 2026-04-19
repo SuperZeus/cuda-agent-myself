@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workspace Metadata",
+  "type": "object",
+  "required": [
+    "task_id",
+    "run_id",
+    "created_at",
+    "template_version",
+    "environment",
+    "readonly_files",
+    "editable_files"
+  ],
+  "properties": {
+    "task_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "template_version": { "type": "string" },
+    "environment": { "type": "object" },
+    "readonly_files": { "type": "array", "items": { "type": "string" } },
+    "editable_files": { "type": "array", "items": { "type": "string" } },
+    "best_reward": { "type": ["number", "null"] },
+    "best_artifact_path": { "type": ["string", "null"] }
+  }
+}

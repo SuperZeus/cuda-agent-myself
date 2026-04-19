@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.dylib
+
+# Virtual environments
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+
+# Build outputs
+build/
+
+# Project runtime outputs
+logs/runs/
+artifacts/
+dataset/raw/
+dataset/processed/
+dataset/trajectories/
+
+# Local configs
+configs/env.local.json
+
+# Misc
+tmp/

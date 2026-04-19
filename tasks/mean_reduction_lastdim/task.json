@@ -1,0 +1,13 @@
+{
+  "task_id": "mean_reduction_lastdim",
+  "task_type": "simple_reduction",
+  "difficulty": "L1",
+  "description": "Mean across the last dimension.",
+  "input_shapes": [[16, 32, 64]],
+  "dtype_constraints": ["float32"],
+  "device_constraints": ["cpu", "cuda"],
+  "correctness_tolerance": {"atol": 1e-4, "rtol": 1e-4},
+  "baseline_targets": {"eager": "pass", "torch_compile": "pass"},
+  "editable_files": ["model_new.py", "kernels/"],
+  "timeout_limits": {"compile_sec": 120, "verify_sec": 120, "profile_sec": 180}
+}

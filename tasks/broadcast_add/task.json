@@ -1,0 +1,13 @@
+{
+  "task_id": "broadcast_add",
+  "task_type": "broadcast",
+  "difficulty": "L1",
+  "description": "Broadcast a row bias across the batch dimension.",
+  "input_shapes": [[32, 128], [128]],
+  "dtype_constraints": ["float32"],
+  "device_constraints": ["cpu", "cuda"],
+  "correctness_tolerance": {"atol": 1e-4, "rtol": 1e-4},
+  "baseline_targets": {"eager": "pass", "torch_compile": "pass"},
+  "editable_files": ["model_new.py", "kernels/"],
+  "timeout_limits": {"compile_sec": 120, "verify_sec": 120, "profile_sec": 180}
+}

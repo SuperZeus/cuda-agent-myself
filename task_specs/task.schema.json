@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CUDA Agent Task",
+  "type": "object",
+  "required": [
+    "task_id",
+    "task_type",
+    "difficulty",
+    "description",
+    "input_shapes",
+    "dtype_constraints",
+    "device_constraints",
+    "correctness_tolerance",
+    "baseline_targets",
+    "editable_files",
+    "timeout_limits"
+  ],
+  "properties": {
+    "task_id": { "type": "string" },
+    "task_type": { "type": "string" },
+    "difficulty": { "type": "string", "enum": ["L1", "L2", "L3"] },
+    "description": { "type": "string" },
+    "input_shapes": {
+      "type": "array",
+      "items": { "type": "array", "items": { "type": "integer" } }
+    },
+    "dtype_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "device_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "correctness_tolerance": {
+      "type": "object",
+      "required": ["atol", "rtol"],
+      "properties": {
+        "atol": { "type": "number" },
+        "rtol": { "type": "number" }
+      }
+    },
+    "baseline_targets": {
+      "type": "object",
+      "required": ["eager", "torch_compile"],
+      "properties": {
+        "eager": { "type": "string" },
+        "torch_compile": { "type": "string" }
+      }
+    },
+    "editable_files": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "timeout_limits": {
+      "type": "object",
+      "required": ["compile_sec", "verify_sec", "profile_sec"],
+      "properties": {
+        "compile_sec": { "type": "integer", "minimum": 1 },
+        "verify_sec": { "type": "integer", "minimum": 1 },
+        "profile_sec": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

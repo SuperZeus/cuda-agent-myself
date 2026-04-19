@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Sandbox Event Log",
+  "type": "object",
+  "required": [
+    "run_id",
+    "task_id",
+    "action",
+    "started_at",
+    "finished_at",
+    "exit_code",
+    "timed_out",
+    "command"
+  ],
+  "properties": {
+    "run_id": { "type": "string" },
+    "task_id": { "type": "string" },
+    "action": { "type": "string" },
+    "started_at": { "type": "string" },
+    "finished_at": { "type": "string" },
+    "exit_code": { "type": "integer" },
+    "timed_out": { "type": "boolean" },
+    "command": { "type": "array", "items": { "type": "string" } },
+    "stdout_path": { "type": "string" },
+    "stderr_path": { "type": "string" },
+    "env_snapshot_path": { "type": "string" }
+  }
+}
